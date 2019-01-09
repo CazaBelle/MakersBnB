@@ -23,19 +23,19 @@ So that I can receive bookings
 I want to be able to list a space
 
 As a host user 
-So that I can receive bookings on more then one space
+So that I can receive bookings on more than one space
 I want to be able to list multiple spaces
 
 As a host user 
 So that my customers can see what I have to offer
-I want to be able to assign pro[erties to my space
+I want to be able to assign properties to my space
 
 As a host user 
 So that I can manage my bookings
 I want to be able to display what dates my space is available
 
 As a guest user 
-So that I make a booking
+So that I can make a booking
 I want to be able to book spaces for a night
 
 As a host user 
