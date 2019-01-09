@@ -1,13 +1,10 @@
-require 'data_mapper'
 
-
+require "./lib/User"
 
 DataMapper.setup(:default, "postgres://localhost/makersbnb_#{ENV["RACK_ENV"]}")
 
 DataMapper.finalize
 
-if ENV['RACK_ENV'] == 'development'
-  DataMapper.auto_upgrade! 
-else
-  DataMapper.auto_migrate! 
-end 
+DataMapper.auto_upgrade! if ENV['RACK_ENV'] == 'development'
+
+DataMapper.auto_migrate! if ENV['RACK_ENV'] == 'test'

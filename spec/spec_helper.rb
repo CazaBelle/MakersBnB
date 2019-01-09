@@ -1,4 +1,4 @@
-ENV['RACK_ENV'] ||= 'test'
+ENV['RACK_ENV'] = "test"
 require 'simplecov'
 require 'capybara/rspec'
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
