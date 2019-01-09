@@ -13,9 +13,11 @@ feature "#Signin " do
 		end 
 
 		scenario "Sign in button takes user to sign in page" do 
-				visit '/sign-in'
+                visit '/sign-in'
+                expect(page).to have_content 'Name'
 				expect(page).to have_content 'Email'
-				expect(page).to have_content 'Password'
+                expect(page).to have_content 'Password'
+                fill_in(:name, with: 'test')
 				fill_in(:email, with: 'test@test.com')
 				fill_in(:password, with: 'secret123')
 				click_button "Sign In"
