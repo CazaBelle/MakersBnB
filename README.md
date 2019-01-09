@@ -35,7 +35,7 @@ So that I can receive bookings on more than one space
 I want to be able to list multiple spaces
 
 As a host user
-So that my customers can see what I have to offer
+So that my guests can see what each space has to offer
 I want to be able to assign properties to my space
 
 As a host user
