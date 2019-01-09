@@ -5,6 +5,13 @@ require './config/data_mapper'
 class Makersbnb < Sinatra::Base
 
   get '/' do 
-    "Hello world!"
-  end 
+    erb (:index)
+  end
+
+
+
+
+
+
+
 end 
