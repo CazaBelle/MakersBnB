@@ -58,7 +58,6 @@ As a host user
 So that I can maximize bookings
 The space is available until I approve the request
 
-
 ```
 
 Installation
