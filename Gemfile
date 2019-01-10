@@ -11,3 +11,5 @@ gem 'data_mapper'
 gem 'simplecov'
 gem 'pry'
 gem 'dm-postgres-adapter'
+
+gem "rake", "~> 12.3"
