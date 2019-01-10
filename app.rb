@@ -26,7 +26,7 @@ class Makersbnb < Sinatra::Base
     end
   end
 
-  get '/signin' do
+  get '/signin' do 
     erb (:sign_in)
   end
 
