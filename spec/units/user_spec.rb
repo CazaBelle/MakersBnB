@@ -34,5 +34,11 @@ RSpec.describe User do
         it 'wrong email' do
           expect(User.authenticate("Wrongemail@123", "5678")).to eq nil
       end
+
+        it "checks for duplicate email" do
+          user2 = User.create(name: "Test2", email: "Test2@123", password: "5678")
+          expect(user.valid?).to eq true
+          expect(user2.valid?).to eq false
+        end
     end
 end
