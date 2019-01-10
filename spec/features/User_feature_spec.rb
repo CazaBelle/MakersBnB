@@ -18,6 +18,13 @@ feature "#Signin " do
 				signin_steps
 				expect(page).to have_current_path('/profile')
 		end
-
-
 end
+
+feature "Log out" do 
+	scenario "logs out from profile page" do 
+		signup_steps
+		signin_steps
+		click_button "Log out"
+		expect(page).to have_current_path '/'
+	end
+end 
