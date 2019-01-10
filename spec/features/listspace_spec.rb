@@ -7,7 +7,7 @@ RSpec.feature 'List Space' do
       fill_in :price, with: "£20"
       click_on "add"
       expect(page.current_path).to eq'/profile'
-      expect(page).to have_content "Jame's couch"
+      expect(page).to have_content "James' couch"
       
     end
   end

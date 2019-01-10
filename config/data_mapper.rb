@@ -1,5 +1,6 @@
 
 require "./lib/User"
+require "./lib/space.rb"
 
 DataMapper.setup(:default, "postgres://localhost/makersbnb_#{ENV["RACK_ENV"]}")
 
