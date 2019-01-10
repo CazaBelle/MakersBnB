@@ -4,22 +4,38 @@ require 'sinatra/base'
 require './config/data_mapper'
 class Makersbnb < Sinatra::Base
 
-  get '/' do
-    erb(:index)
-  end
 
-  get '/signup' do
+  enable :sessions
+
+  get '/' do 
+    erb (:index)
+  end
+  
+   get '/signup' do
     erb(:signup)
   end
-
+  
   post '/signup' do
     user = User.create(name: params[:name], email: params[:email], password: params[:password])
     redirect "/signin"
   end
 
-  get "/signin" do
-
+  get '/sign-in' do 
+    erb (:sign_in)
   end
 
+  post '/sign-in' do
+    user = User.authenticate(params[:email], params[:password])
+      if user 
+        sessions[:user_id] = user.id
+        redirect('/profile')
+      else
+        redirect'/error'
+      end
+  end
 
-end
+  get '/profile' do 
+  end
+
+end 
+
