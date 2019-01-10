@@ -7,26 +7,32 @@ class Makersbnb < Sinatra::Base
 
   enable :sessions
 
-  get '/' do 
+  get '/' do
     erb (:index)
   end
-  
+
    get '/signup' do
     erb(:signup)
   end
-  
+
   post '/signup' do
     user = User.create(name: params[:name], email: params[:email], password: params[:password])
-    redirect "/signin"
+    # redirect "/error" unless user.valid?
+    if user.valid?
+      session[:user_id] = user.id
+      redirect "/signin"
+    else
+      redirect "/error"
+    end
   end
 
-  get '/signin' do 
+  get '/signin' do
     erb (:sign_in)
   end
 
   post '/signin' do
     user = User.authenticate(params[:email], params[:password])
-      if user 
+      if user
         session[:user_id] = user.id
         redirect('/profile')
       else
@@ -34,9 +40,12 @@ class Makersbnb < Sinatra::Base
       end
   end
 
-  get '/profile' do 
+  get "/error" do
+    
+  end
+
+  get '/profile' do
     erb (:profile)
   end
 
-end 
-
+end
