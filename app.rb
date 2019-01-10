@@ -17,10 +17,14 @@ class Makersbnb < Sinatra::Base
   post '/sign-in' do
     user = User.authenticate(params[:email], params[:password])
       if user 
-        sessions[:id] = user.id
+        sessions[:user_id] = user.id
+        redirect('/profile')
       else
+        redirect'/error'
       end
-    redirect('/profile')
+  end
+
+  get '/profile' do 
   end
 
 end 

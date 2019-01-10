@@ -21,7 +21,7 @@ feature "#Signin " do
 				fill_in(:email, with: 'test@test.com')
 				fill_in(:password, with: 'secret123')
 				click_button "Sign In"
-				expect(page).to have_current_path('/')
+				expect(page).to have_current_path('/profile')
 		end
 
 		

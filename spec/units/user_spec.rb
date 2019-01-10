@@ -1,5 +1,5 @@
 require './lib/User.rb'
-require 'pry'
+
 
 RSpec.describe User do
     #let(:password) { double :password }
