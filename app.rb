@@ -20,11 +20,11 @@ class Makersbnb < Sinatra::Base
     redirect "/signin"
   end
 
-  get '/sign-in' do 
+  get '/signin' do 
     erb (:sign_in)
   end
 
-  post '/sign-in' do
+  post '/signin' do
     user = User.authenticate(params[:email], params[:password])
       if user 
         sessions[:user_id] = user.id
