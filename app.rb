@@ -35,7 +35,10 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/profile' do 
+
   end
 
+  get '/listspace' do
+  end
 end 
 

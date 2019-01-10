@@ -4,9 +4,9 @@ require './lib/User.rb'
 
 RSpec.describe User do
 #     let!(:user) {User.create(name: "Subomi", email: "test@test.com", password: "123456")}
-
-    let!(:user) { User.create(name: "Test", email: "Test@123", password: "1234") }
+  
   context "#create" do
+  let!(:user) { User.create(name: "Test", email: "Test@123", password: "1234") }
     it "stores user name" do
       expect(user.name).to eq "Test"
     end
@@ -21,7 +21,7 @@ RSpec.describe User do
   end
 
     describe '#authenticate' do
-        user = User.create(name: "Test2", email: "Test2@123", password: "5678")
+      user = User.create(name: "Test2", email: "Test2@123", password: "5678")
 
         it 'exists?' do
             expect(User.authenticate(user.email, "5678")).to eq user
