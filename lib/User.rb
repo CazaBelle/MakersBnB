@@ -1,7 +1,7 @@
 require 'data_mapper'
 
 class User
-include DataMapper::Resource
+  include DataMapper::Resource
 
   property :id, Serial
   property :name, String 
@@ -11,7 +11,6 @@ include DataMapper::Resource
   def self.authenticate(email, password)
     user = first(email: email)
     return nil unless user
-    #binding.pry
     if user.password == password
       user
     else
@@ -22,3 +21,4 @@ include DataMapper::Resource
   end
   
 end 
+

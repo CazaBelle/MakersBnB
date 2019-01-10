@@ -1,23 +1,24 @@
+
 require './lib/User.rb'
 
 
 RSpec.describe User do
-    #let(:password) { double :password }
+#     let!(:user) {User.create(name: "Subomi", email: "test@test.com", password: "123456")}
+
     let!(:user) { User.create(name: "Test", email: "Test@123", password: "1234") }
-
-    context 'Sign In' do
-        it 'checks name exists' do
-            expect(user.name).to eq "Test"
-        end
-    
-        it 'checks email exists' do
-            expect(user.email).to eq "Test@123"
-        end
-
-        it 'checks password exists' do
-            expect(user.password).to eq "1234"
-        end
+  context "#create" do
+    it "stores user name" do
+      expect(user.name).to eq "Test"
     end
+
+      it "stores user email" do
+      expect(user.email).to eq "Test@123"
+    end
+
+      it "stores user password" do
+      expect(user.password).to eq "1234"
+    end
+  end
 
     describe '#authenticate' do
         user = User.create(name: "Test2", email: "Test2@123", password: "5678")
@@ -34,5 +35,4 @@ RSpec.describe User do
           expect(User.authenticate("Wrongemail@123", "5678")).to eq nil
       end
     end
-
 end
