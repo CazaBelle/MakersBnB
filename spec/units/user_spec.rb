@@ -25,7 +25,14 @@ RSpec.describe User do
         it 'exists?' do
             expect(User.authenticate(user.email, "5678")).to eq user
         end
-    end
 
+        it 'password is wrong' do
+          expect(User.authenticate(user.email, "1234")). to eq nil
+        end
+
+        it 'wrong email' do
+          expect(User.authenticate("Wrongemail@123", "5678")).to eq nil
+      end
+    end
 
 end

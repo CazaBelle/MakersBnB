@@ -15,7 +15,7 @@ include DataMapper::Resource
     if user.password == password
       user
     else
-      "wrong Password"
+      nil
     end  
     
 
