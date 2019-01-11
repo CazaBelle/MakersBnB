@@ -28,15 +28,15 @@ class Makersbnb < Sinatra::Base
     end
   end
 
-  get '/signin' do 
+  get '/signin' do
     erb (:sign_in)
   end
 
   post '/signin' do
-    user = User.authenticate(params[:email], params[:password]) 
+    user = User.authenticate(params[:email], params[:password])
       if user
         session[:user_id] = user.id
-        redirect('/profile')
+        redirect('/profile/:id')
       else
         redirect'/error'
       end
@@ -49,14 +49,16 @@ class Makersbnb < Sinatra::Base
   post '/listspace' do
     space = Space.create(name: params[:name], description: params[:description], price: params[:price])
     session[:space_id] = space.id
-    redirect '/profile'
+    redirect '/profile/:id'
   end
 
   get "/error" do
-    
+
   end
 
-  get '/profile' do
+  get '/profile/:id' do
+
+    @user = User.get(session[:user_id])
     erb (:profile)
   end
 
