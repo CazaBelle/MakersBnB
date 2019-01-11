@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/features/User_feature_spec.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/User_feature_spec.rb": [
         1,
         1,
         1,
@@ -33,7 +33,7 @@
         null,
         null
       ],
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/feature_helper.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/feature_helper.rb": [
         1,
         4,
         4,
@@ -54,7 +54,7 @@
         3,
         null
       ],
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/features/listspace_spec.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/listspace_spec.rb": [
         1,
         1,
         1,
@@ -72,7 +72,7 @@
         null,
         null
       ],
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/features/signup_spec.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/signup_spec.rb": [
         1,
         1,
         1,
@@ -85,7 +85,7 @@
         null,
         null
       ],
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/units/space_spec.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/units/space_spec.rb": [
         1,
         null,
         1,
@@ -98,7 +98,7 @@
         null,
         null
       ],
-      "/Users/subomi-makers/Documents/projects/MakersBnb/spec/units/user_spec.rb": [
+      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/units/user_spec.rb": [
         null,
         1,
         null,
@@ -147,6 +147,6 @@
         null
       ]
     },
-    "timestamp": 1547221533
+    "timestamp": 1547222414
   }
 }

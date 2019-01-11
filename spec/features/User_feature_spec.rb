@@ -5,7 +5,7 @@ require './spec/feature_helper'
 feature "#Signin " do
 		scenario "homepage exists" do
 				visit '/'
-				expect(page).to have_content("Homepage")
+				expect(page).to have_content("Welcome to MakersBnb")
 		end
 
 		scenario "Clicks signin button" do
