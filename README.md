@@ -1,8 +1,8 @@
-# MakersBnb
+# MakersBnB
 
 Description
 -------
-* Sinatra app mimicking AirBnb app. Allows the user to signin, list multiple space
+Sinatra app mimicking AirBnb app. Allows the user to signin, list multiple space
 * Any signed-up user can list a new space.
 * Users can list multiple spaces.
 * Users should be able to name their space, provide a short description of the space, and a price per night.
@@ -62,9 +62,20 @@ The space is available until I approve the request
 
 Installation
 -------
+$ `git clone https://github.com/CazaBelle/MakersBnB.git`
+$ `cd MakersBnB`
+$ `bundle install`
+$ `createdb makersbnb_development`
+$ `createdb makersbnb_test`
+$ `rake db:auto_migrate`
+$ `rake db:auto_migrate RACK_ENV=test`
 
-Database Config
+QuickStart
 ------
+$`rackup` 
+Start the server at localhost:9292
 
-Startup
+Testing
 ------
+$ `bundle exec rspec`
+$ open `coverage/index.html` => shows test coverage report 
