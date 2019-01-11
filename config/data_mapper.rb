@@ -1,4 +1,3 @@
-
 require "./lib/User"
 require "./lib/space.rb"
 require "./lib/booking.rb"
