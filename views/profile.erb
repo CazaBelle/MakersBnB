@@ -29,8 +29,9 @@
 
 </p>
 <center>
-  <form action='/' method='get'>
-  <input type='submit' value='Log out'>
+  <form action='/logout' method='post'>
+    <input type="hidden" name="_method" value="delete">
+    <input type='submit' value='Log out'>
   </form>
 </center>
 
