@@ -65,6 +65,11 @@ class Makersbnb < Sinatra::Base
 
   end
 
+  get "/properties" do 
+    @spaces = Space.all
+    erb :properties
+  end
+ 
   delete "/logout" do
     session.delete(:user_id)
     redirect "/"

@@ -17,3 +17,11 @@ def signin_steps
   fill_in(:password, with: 'secret123')
   click_button "Sign In"
 end
+
+def add_space
+  click_button 'Add Space'
+  fill_in :name, with: "couch"
+  fill_in :description, with: "This is a really soft coach"
+  fill_in :price, with: "£20"
+  click_button "add"
+end
