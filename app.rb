@@ -6,15 +6,14 @@ require 'pry'
 
 class Makersbnb < Sinatra::Base
 
-
   enable :sessions
   enable :method_override
 
   get '/' do
-    erb (:index)
+    erb :index
   end
 
-   get '/signup' do
+  get '/signup' do
     erb(:signup)
   end
 
@@ -35,23 +34,23 @@ class Makersbnb < Sinatra::Base
 
   post '/signin' do
     user = User.authenticate(params[:email], params[:password])
-      if user
-        session[:id] = user.id
-        redirect("/profile/#{session[:id]}")
-      else
-        redirect'/error'
-      end
+    if user
+      session[:id] = user.id
+      redirect("/profile/#{session[:id]}")
+    else
+      redirect '/error'
+    end
   end
 
   get '/profile/:id' do
     @user = User.get(params[:id])
-    @spaces = Space.all(:conditions => { :user_id => params[:id]})
-    erb (:profile)
+    @spaces = Space.all(:conditions => { :user_id => params[:id] })
+    erb :profile
   end
 
   get '/profile/listspace/:id' do
     @user = User.get(params[:id])
-    erb (:list_space)
+    erb :list_space
   end
 
   post '/profile/listspace/:id' do

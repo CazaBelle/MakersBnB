@@ -1,9 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/User_feature_spec.rb": [
-
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/User_feature_spec.rb": [
         1,
         1,
         1,
@@ -35,9 +33,7 @@
         null,
         null
       ],
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/feature_helper.rb": [
-
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/feature_helper.rb": [
         1,
         5,
         5,
@@ -66,7 +62,7 @@
         1,
         null
       ],
-      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/features/bookings_spec.rb": [
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/bookings_spec.rb": [
         1,
         null,
         1,
@@ -80,19 +76,7 @@
         null,
         null
       ],
-      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/lib/booking.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/listspace_spec.rb": [
-
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/listspace_spec.rb": [
         1,
         1,
         1,
@@ -110,9 +94,7 @@
         null,
         null
       ],
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/features/signup_spec.rb": [
-
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/signup_spec.rb": [
         1,
         1,
         1,
@@ -125,8 +107,7 @@
         null,
         null
       ],
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/units/space_spec.rb": [
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/units/space_spec.rb": [
         1,
         null,
         1,
@@ -139,12 +120,8 @@
         null,
         null
       ],
-
-      "/Users/Hotblack/Ruby/Group_Projects/MakersBnB/MakersBnb/spec/units/user_spec.rb": [
-
-        null,
+      "/Users/carol/makers_projects/week-5/makersbnb/spec/units/user_spec.rb": [
         1,
-        null,
         null,
         1,
         null,
@@ -190,8 +167,6 @@
         null
       ]
     },
-
-    "timestamp": 1547222414
-
+    "timestamp": 1547224311
   }
 }

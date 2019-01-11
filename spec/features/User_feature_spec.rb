@@ -21,10 +21,10 @@ feature "#Signin " do
 end
 
 feature "Log out" do 
-	scenario "logs out from profile page" do 
-		signup_steps
-		signin_steps
-		click_button "Log out"
-		expect(page).to have_current_path '/'
-	end
+	 scenario "logs out from profile page" do 
+ 		 signup_steps
+ 		 signin_steps
+ 		 click_button "Log out"
+ 		 expect(page).to have_current_path '/'
+ 	end
 end 
