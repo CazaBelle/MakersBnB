@@ -36,10 +36,10 @@ RSpec.describe User do
         end
 
         it "checks for duplicate email" do
-          user1 = User.create(name: "Test2", email: "Test2@123", password: "5678")
-          user2 = User.create(name: "Test2", email: "Test2@123", password: "5678")
-          expect(user1.valid?).to eq true
-          expect(user2.valid?).to eq false
+          user = User.create(name: "Test2", email: "Test2@123", password: "5678")
+          # user2 = User.create(name: "Test2", email: "Test2@123", password: "5678")
+          expect(user.valid?).to eq true
+          expect(User.create(name: "Test2", email: "Test2@123", password: "5678").valid?).to eq false
         end
     end
 end
