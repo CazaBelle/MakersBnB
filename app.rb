@@ -2,6 +2,8 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require './config/data_mapper'
+
+
 class Makersbnb < Sinatra::Base
 
 
@@ -31,13 +33,23 @@ class Makersbnb < Sinatra::Base
   end
 
   post '/signin' do
-    user = User.authenticate(params[:email], params[:password])
+    user = User.authenticate(params[:email], params[:password]) 
       if user
         session[:user_id] = user.id
         redirect('/profile')
       else
         redirect'/error'
       end
+  end
+
+  get '/listspace' do
+    erb (:list_space)
+  end
+
+  post '/listspace' do
+    space = Space.create(name: params[:name], description: params[:description], price: params[:price])
+    session[:space_id] = space.id
+    redirect '/profile'
   end
 
   get "/error" do
