@@ -10,9 +10,18 @@
     Your password is <%= @user.password%>
   </p>
 </div>
+
+
+
+<form action='/profile/:id/listspace' method='get'>
+<input type='submit' value='Add Space'>
+</form>
+
 <form action='/' method='get'>
 <input type='submit' value='Log out'>
 </form>
+
+
 
 </html>
 </body>

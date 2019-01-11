@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<form action='/listspace' method="post">
+<form action='/profile/<%= @user.id %>/listspace' method="post">
     <div>
         <label for="name">Name</label>
         <input type="text" name="name">
