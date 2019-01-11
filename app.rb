@@ -2,7 +2,7 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'sinatra/base'
 require './config/data_mapper'
-
+require 'pry'
 
 class Makersbnb < Sinatra::Base
 
@@ -44,6 +44,7 @@ class Makersbnb < Sinatra::Base
 
   get '/profile/:id' do
     @user = User.get(params[:id])
+    @spaces = Space.all(:conditions => { :user_id => params[:id]})
     erb (:profile)
   end
 
