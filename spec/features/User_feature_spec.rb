@@ -16,7 +16,7 @@ feature "#Signin " do
 		scenario "Sign in button takes user to sign in page" do
 				signup_steps
 				signin_steps
-				expect(page).to have_current_path('/profile/:id')
+				expect(page).to have_current_path('/profile/1')
 		end
 end
 
