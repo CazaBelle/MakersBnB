@@ -64,6 +64,10 @@ class Makersbnb < Sinatra::Base
 
   end
 
+  get "/properties" do 
+    @spaces = Space.all
+    erb :properties
+  end
  
 
 end

@@ -1,0 +1,14 @@
+<center>
+<h1>Which Amazing Property Would You Like?</h1>
+
+<% @spaces.each do |space|  %>
+  <h2> <%= space.name %> </h2>
+  <p>Details: <%= space.description %> </p>
+  <p> £<%= space.price %> </p>
+
+  <form>
+    <input type='submit' value='Book me'>
+  </form>
+
+<%end%>
+</center>

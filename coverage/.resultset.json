@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/User_feature_spec.rb": [
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/features/User_feature_spec.rb": [
         1,
         1,
         1,
@@ -33,8 +33,19 @@
         null,
         null
       ],
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/feature_helper.rb": [
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/feature_helper.rb": [
         1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        null,
+        null,
+        1,
+        4,
+        4,
         4,
         4,
         4,
@@ -44,48 +55,69 @@
         null,
         null,
         1,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
-        3,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/listspace_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/features/signup_spec.rb": [
-        1,
-        1,
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/features/bookings_spec.rb": [
         1,
         null,
         1,
         1,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/units/space_spec.rb": [
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/lib/booking.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/features/listspace_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/features/signup_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/units/space_spec.rb": [
         1,
         null,
         1,
@@ -98,7 +130,7 @@
         null,
         null
       ],
-      "/Users/carol/makers_projects/week-5/makersbnb/spec/units/user_spec.rb": [
+      "/Users/michaelnguyen/Makers/week_5/MakersBnB/MakersBnb/spec/units/user_spec.rb": [
         null,
         1,
         null,
@@ -147,6 +179,6 @@
         null
       ]
     },
-    "timestamp": 1547218968
+    "timestamp": 1547222692
   }
 }
