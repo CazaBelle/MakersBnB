@@ -6,7 +6,7 @@
   <p>Details: <%= space.description %> </p>
   <p> £<%= space.price %> </p>
 
-  <form>
+  <form action='/bookings/<%=space.id%>' method='post'>
     <input type='submit' value='Book me'>
   </form>
 
