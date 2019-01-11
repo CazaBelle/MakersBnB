@@ -2,7 +2,14 @@
 <html>
 <body>
 <h1>Welcome to Makersbnb, <%= @user.name%> !</h1>
-
+<div>
+  <p>
+    Your email is <%= @user.email%>
+  </p>
+  <p>
+    Your password is <%= @user.password%>
+  </p>
+</div>
 <form action='/' method='get'>
 <input type='submit' value='Log out'>
 </form>

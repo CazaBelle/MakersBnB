@@ -57,7 +57,6 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/profile/:id' do
-
     @user = User.get(session[:user_id])
     erb (:profile)
   end
