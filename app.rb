@@ -56,22 +56,29 @@ class Makersbnb < Sinatra::Base
   post '/profile/listspace/:id' do
     @user = User.get(params[:id])
     space = Space.create(name: params[:name], description: params[:description], price: params[:price], user_id: params[:id])
-    session[:space_id] = space.id
+    # session[:space_id] = space.id
     redirect "/profile/#{session[:id]}"
   end
 
-  get "/error" do
+  get '/error' do
 
   end
 
-  get "/properties" do 
+  get '/properties' do 
+    
     @spaces = Space.all
     erb :properties
   end
+
+  post '/bookings/:id' do
+    user_id = session[:id]
+    booking = Booking.create(user_id: user_id, space_id: params[:id])
+    redirect "/profile/#{user_id}"
+  end
  
-  delete "/logout" do
+  delete '/logout' do
     session.delete(:user_id)
-    redirect "/"
+    redirect '/'
   end
 
 end
