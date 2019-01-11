@@ -21,7 +21,7 @@ class Makersbnb < Sinatra::Base
     user = User.create(name: params[:name], email: params[:email], password: params[:password])
     # redirect "/error" unless user.valid?
     if user.valid?
-      session[:user_id] = user.id
+      session[:id] = user.id
       redirect "/signin"
     else
       redirect "/error"
@@ -29,38 +29,40 @@ class Makersbnb < Sinatra::Base
   end
 
   get '/signin' do
-    erb (:sign_in)
+    erb(:sign_in)
   end
 
   post '/signin' do
     user = User.authenticate(params[:email], params[:password])
       if user
-        session[:user_id] = user.id
-        redirect('/profile/id')
+        session[:id] = user.id
+        redirect("/profile/#{session[:id]}")
       else
         redirect'/error'
       end
   end
 
-  get '/profile/:id/listspace' do
-    @user = User.get(session[:user_id])
+  get '/profile/:id' do
+    @user = User.get(params[:id])
+    erb (:profile)
+  end
+
+  get '/profile/listspace/:id' do
+    @user = User.get(params[:id])
     erb (:list_space)
   end
 
-  post '/profile/:id/listspace' do
-    @user = User.get(session[:user_id])
-    space = Space.create(name: params[:name], description: params[:description], price: params[:price], user_id: params[:user_id])
+  post '/profile/listspace/:id' do
+    @user = User.get(params[:id])
+    space = Space.create(name: params[:name], description: params[:description], price: params[:price], user_id: params[:id])
     session[:space_id] = space.id
-    redirect '/profile/:id'
+    redirect "/profile/#{session[:id]}"
   end
 
   get "/error" do
 
   end
 
-  get '/profile/:id' do
-    @user = User.get(session[:user_id])
-    erb (:profile)
-  end
+ 
 
 end
