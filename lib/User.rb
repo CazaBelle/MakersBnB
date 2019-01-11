@@ -9,6 +9,7 @@ class User
   property :password, BCryptHash
 
   has n, :spaces
+  has n, :bookings
   def self.authenticate(email, password)
     user = first(email: email)
     return nil unless user

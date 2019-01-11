@@ -9,5 +9,6 @@ class Space
     property :price, Integer
 
     belongs_to :user
+    has n, :bookings
 
 end
