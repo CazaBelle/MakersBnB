@@ -16,3 +16,5 @@ gem "rake", "~> 12.3"
 
 
 gem "simplecov-console", "~> 0.4.2"
+
+gem "rubocop", "~> 0.62.0"
