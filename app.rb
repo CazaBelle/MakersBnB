@@ -8,6 +8,7 @@ class Makersbnb < Sinatra::Base
 
 
   enable :sessions
+  enable :method_override
 
   get '/' do
     erb (:index)
@@ -69,5 +70,9 @@ class Makersbnb < Sinatra::Base
     erb :properties
   end
  
+  delete "/logout" do
+    session.delete(:user_id)
+    redirect "/"
+  end
 
 end
