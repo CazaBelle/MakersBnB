@@ -62,20 +62,28 @@ The space is available until I approve the request
 
 Installation
 -------
-$ `git clone https://github.com/CazaBelle/MakersBnB.git`
-$ `cd MakersBnB`
-$ `bundle install`
-$ `createdb makersbnb_development`
-$ `createdb makersbnb_test`
-$ `rake db:auto_migrate`
-$ `rake db:auto_migrate RACK_ENV=test`
+* $ `git clone https://github.com/CazaBelle/MakersBnB.git`
+* $ `cd MakersBnB`
+* $ `bundle install`
+* $ `createdb makersbnb_development`
+* $ `createdb makersbnb_test`
+* $ `rake db:auto_migrate`
+* $ `rake db:auto_migrate RACK_ENV=test`
 
 QuickStart
 ------
-$`rackup` 
-Start the server at localhost:9292
+* $`rackup` 
+* Start the server at localhost:9292
 
 Testing
 ------
-$ `bundle exec rspec`
-$ open `coverage/index.html` => shows test coverage report 
+* $ `bundle exec rspec`
+* $ `open coverage/index.html` => shows test coverage report 
+
+Contributers
+------
+* [Michael Nguyen](https://github.com/michaelnguyen974) 
+* [James Hotblack](https://github.com/hotblack86)
+* [Subomi Onanuga](https://github.com/subomionanuga)
+* [Carol Gardiner](https://github.com/CazaBelle)
+
